@@ -34,4 +34,5 @@
       ansible.builtin.unarchive:
         src: /tmp/catalouge.zip
         dest: /app
+        remote_src: yes #files already exist in remote servre
         
