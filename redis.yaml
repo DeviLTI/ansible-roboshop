@@ -16,13 +16,13 @@
     - name: replacing port
       ansible.builtin.replace:
         path: /etc/redis/redis.conf
-        regex: '127.0.0.1'
+        regexp: '127.0.0.1'
         replace: '0.0.0.0'
 
     - name: changing protected mode
       ansible.builtin.lineinfile:
         path: /etc/redis/redis.conf
-        regex: 'protected-mode'
+        regexp: 'protected-mode'
         line: protected-mode on
 
     - name: start and enable service
