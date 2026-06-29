@@ -14,7 +14,7 @@
         state: present
 
     - name: creating system user
-      ansible.builti.user:
+      ansible.builtin.user:
         name: roboshop
         shell: /sbin/nologin
         system: yes
@@ -53,4 +53,4 @@
         name: cart
         state: started
         enabled: yes
-        
+
