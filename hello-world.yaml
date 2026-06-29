@@ -1,0 +1,8 @@
+- name: hello world
+  hosts: node
+  # connection: local #no need useris and password
+  tasks:
+  - name: Print hello world
+    ansible.builtin.debug:
+      msg: "Hello World"
+      
