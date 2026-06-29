@@ -33,7 +33,7 @@
 
     - name: extracting code
       ansible.builtin.unarchive:
-        src: /tmp/cart.zip
+        src: /tmp/user.zip
         dest: /app
         remote_src: true
 
