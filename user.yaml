@@ -29,6 +29,7 @@
       ansible.builtin.get_url:
         url: https://roboshop-artifacts.s3.amazonaws.com/user-v3.zip
         dest: /tmp/user.zip
+        remote_src: true
 
     - name: extracting code
       ansible.builtin.unarchive:
