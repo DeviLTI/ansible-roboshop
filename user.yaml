@@ -21,7 +21,7 @@
         home: /app
 
     - name: create dir
-      ansib;e.builtin.file:
+      ansible.builtin.file:
         path: /app
         state: directory
 
