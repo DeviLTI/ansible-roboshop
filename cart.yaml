@@ -34,6 +34,7 @@
       ansible.builtin.unarchive:
         src: /tmp/cart/zip
         dest: /app
+        remote_src: yes
       
     - name: insatlling dependenscies
       community.general.npm:
